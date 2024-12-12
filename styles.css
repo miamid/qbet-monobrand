@@ -1,0 +1,466 @@
+/* General Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+}
+
+a {
+    color: inherit;
+    text-decoration:none;
+}
+
+/* Header Styles */
+.header {
+    background-color: #00734B;
+    color: #fff;
+    padding: 10px 20px;
+}
+
+.header-top {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo {
+    font-size: 1.5em;
+    font-weight: bold;
+}
+
+/* Updated Navigation Styles */
+.nav {
+    display: flex;
+    justify-content: flex-start; /* Align links to the left */
+    gap: 20px; /* Add spacing between menu items */
+    margin-top: 10px;
+}
+
+.nav a {
+    color: #fff;
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+    gap: 5px; /* Spacing between icon and text */
+    font-size: 1em;
+    padding: 5px 10px; /* Add padding for better clickability */
+}
+
+.nav a:hover {
+    background-color: rgba(255, 255, 255, 0.1); /* Subtle hover effect */
+    border-radius: 5px;
+}
+
+.auth-buttons .btn {
+    margin: 0 5px;
+    padding: 5px 10px;
+    background: #ffcc00;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.auth-buttons .btn.login {
+    background: #004d26;
+    color: #fff;
+}
+
+/* Header Buttons */
+.header-buttons {
+    display: flex;
+    gap: 10px; /* Spacing between buttons */
+    align-items: center;
+}
+
+.btn {
+    font-size: 1em;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+/* Login Button */
+.login-btn {
+    background-color: #fff; /* White background for login button */
+    color: #004d26; /* Dark green text color */
+    border: 2px solid #004d26; /* Add border matching text color */
+}
+
+.login-btn:hover {
+    background-color: #004d26;
+    color: #fff;
+}
+
+/* Sign-Up Button */
+.signup-btn {
+    background-color: #ffcc00; /* Yellow background */
+    color: #004d26; /* Dark green text color */
+}
+
+.signup-btn:hover {
+    background-color: #004d26;
+    color: #ffcc00; /* Yellow text on hover */
+}
+
+/* Hero Carousel Container */
+.hero-carousel {
+    width: 100%;
+    height: 500px; /* Adjust height as needed */
+    position: relative;
+    overflow: hidden;
+}
+.swiper-container {
+    height: 100%;
+}
+
+/* Individual Slides */
+.hero-slide {
+    width: 100%;
+    height: 100%; /* Ensure the background image fills the height of the carousel */
+    background-size: cover; /* Make the image cover the entire slide */
+    background-position: center; /* Center the image */
+    background-repeat: no-repeat; /* Avoid repeating the image */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    color: #fff;
+    position: relative;
+}
+
+/* Hero Content */
+.hero-content {
+    background: rgba(0, 0, 0, 0.5); /* Optional overlay */
+    padding: 20px;
+    border-radius: 10px;
+    text-align: center;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.hero-content h1 {
+    font-size: 3em;
+    margin-bottom: 10px;
+}
+
+.hero-content p {
+    font-size: 1.5em;
+    margin-bottom: 20px;
+}
+
+.sign-up-btn {
+    padding: 10px 20px;
+    font-size: 1.2em;
+    color: #004d26;
+    background-color: #ffcc00;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.sign-up-btn:hover {
+    background-color: #ffd633;
+}
+
+/* Navigation Buttons */
+.swiper-button-next,
+.swiper-button-prev {
+    color: #fff;
+    font-size: 1.5em;
+}
+
+.swiper-button-next:hover,
+.swiper-button-prev:hover {
+    color: #ffcc00;
+}
+
+/* Pagination */
+.swiper-pagination {
+    bottom: 10px;
+}
+.swiper-pagination-bullet {
+    background: #fff;
+    opacity: 0.8;
+}
+.swiper-pagination-bullet-active {
+    background: #ffcc00;
+}
+
+
+/* Casino Section */
+.casino {
+    padding: 20px;
+    background: #fff;
+}
+
+/* Game Cards Section */
+.game-cards {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr)); /* Responsive grid layout */
+    gap: 20px; /* Space between cards */
+    padding: 20px;
+}
+
+/* Individual Card */
+.card {
+    background: #fff; /* White card background */
+    border-radius: 10px; /* Rounded corners */
+    overflow: hidden; /* Ensure content stays within the rounded borders */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+    text-align: center;
+    transition: transform 0.3s ease, box-shadow 0.3s ease; /* Smooth hover effects */
+}
+
+/* Hover Effect */
+.card:hover {
+    transform: translateY(-5px); /* Lift the card slightly */
+    box-shadow: 0 8px 15px rgba(0, 0, 0, 0.2); /* Stronger shadow on hover */
+}
+
+/* Card Image */
+.card img {
+    width: 100%; /* Make image fill the card */
+    height: auto; /* Maintain aspect ratio */
+}
+
+/* Card Text */
+.card p {
+    font-size: 1em;
+    font-weight: bold;
+    color: #004d26; /* Dark green text */
+    margin: 10px 0;
+}
+
+
+/* Top Winners Section */
+.top-winners {
+    padding: 20px;
+    background: #f9f9f9;
+    text-align: center;
+}
+
+.top-winners h2 {
+    font-size: 1.8em;
+    color: #004d26; /* Dark green */
+    margin-bottom: 15px;
+}
+
+/* Time Filter Buttons */
+.time-filters {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    margin-bottom: 20px;
+}
+
+.filter-btn {
+    padding: 10px 20px;
+    font-size: 1em;
+    border: none;
+    border-radius: 5px;
+    background: #fff;
+    color: #004d26;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.filter-btn:hover {
+    background: #004d26;
+    color: #fff;
+}
+
+.filter-btn.active {
+    background: #ffcc00;
+    color: #004d26;
+}
+
+/* Winner Cards Container */
+.winner-cards {
+    display: flex;
+    gap: 20px;
+    justify-content: center;
+    flex-wrap: wrap; /* Ensure it adjusts on smaller screens */
+}
+
+/* Individual Winner Card */
+.winner-card {
+    width: 150px;
+    background: #004d26; /* Dark green */
+    color: #fff;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+.winner-card.invisible {
+    display: none;
+}
+
+.winner-card:hover {
+    transform: translateY(-5px); /* Lift the card on hover */
+    box-shadow: 0 8px 15px rgba(0, 0, 0, 0.2);
+}
+
+/* Winner Card Image */
+.winner-card img {
+    width: 100%;
+    height: auto;
+}
+
+/* Winner Card Info */
+.winner-info {
+    padding: 10px;
+}
+
+.winner-info p:first-child {
+    font-size: 1.2em;
+    font-weight: bold;
+    color: #ffcc00; /* Yellow text for the winning amount */
+}
+
+.winner-info p:last-child {
+    font-size: 1em;
+    color: #fff; /* White text for the game name */
+}
+
+/* Info content */
+.info-section {
+    display: flex;
+    align-items: center;
+    padding: 20px 30px;
+    border: 1px solid #e0e0e0;
+    border-radius: 8px;
+    max-width: 1200px;
+    margin: 20px auto;
+    background-color: #ffffff;
+}
+
+.info-bar {
+    width: 4px;
+    height: auto;
+    background-color: #00793c; /* Green bar color */
+    margin-right: 20px;
+}
+
+.info-content {
+    flex: 1;
+}
+
+.info-content h2 {
+    font-size: 22px;
+    font-weight: bold;
+    margin: 0 0 10px;
+    color: #333333;
+}
+
+.info-content p {
+    font-size: 16px;
+    color: #555555;
+    line-height: 1.6;
+    margin: 0;
+}
+
+
+/* Footer */
+.footer {
+    text-align: center;
+    padding: 10px;
+    background: #002411;
+    color: #fff;
+}
+
+/* Responsive Styles */
+@media (max-width: 768px) {
+    .header-top {
+        flex-direction: row;
+        align-items: flex-start;
+    }
+
+    .nav {
+        display: none;
+    }
+
+    .games {
+        flex-direction: column;
+    }
+}
+
+@media (max-width: 768px) {
+    .hero-carousel {
+        height: 300px; /* Reduce height for mobile */
+    }
+
+    .hero-content {
+        padding: 10px; /* Reduce padding for compact layout */
+    }
+
+    .hero-content h1 {
+        font-size: 2em; /* Reduce font size for smaller screens */
+    }
+
+    .hero-content p {
+        font-size: 1em;
+    }
+
+    .sign-up-btn {
+        font-size: 1em; /* Adjust button size */
+    }
+}
+
+@media (max-width: 768px) {
+    .game-cards {
+        grid-template-columns: repeat(2, 1fr); /* Show two cards per row */
+        gap: 10px; /* Reduce spacing between cards */
+    }
+
+    .card {
+        font-size: 0.8em; /* Adjust text size */
+    }
+}
+
+@media (max-width: 768px) {
+    .winner-cards {
+        flex-direction: column; /* Stack winner cards vertically */
+        align-items: center;
+    }
+
+    .winner-card {
+        width: 100%; /* Full width on smaller screens */
+        max-width: 200px; /* Limit max width for readability */
+    }
+
+    .time-filters {
+        flex-wrap: wrap; /* Allow buttons to wrap */
+        gap: 5px; /* Reduce gap for compact spacing */
+    }
+
+    .filter-btn {
+        font-size: 0.8em; /* Reduce font size for mobile */
+    }
+}
+
+@media (max-width: 768px) {
+    .footer {
+        padding: 10px;
+        font-size: 0.8em; /* Smaller text size for compact display */
+    }
+
+    .casino {
+        text-align: center; /* Center-align casino description */
+    }
+}
+
